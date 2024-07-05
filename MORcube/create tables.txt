@@ -1,0 +1,41 @@
+create table users(
+id int primary key auto_increment not null,
+email varchar(30) not null,
+password varchar(30) not null
+);
+
+
+create table exams(
+exam_code int unique,
+exam_name varchar(30) unique,
+unique(exam_code,exam_name)
+);
+
+
+
+
+create table examregister(
+id int primary key auto_increment not null,
+email varchar(30) not null,
+candidate_name varchar(40) not null,
+exam varchar(40) not null,
+mobile bigint not null,
+dob date not null, 
+gender varchar(10) not null,
+father varchar(40),
+aadhaar bigint not null,
+cast varchar(30) not null, 
+religion varchar(20),
+state varchar(20),
+photo mediumblob,
+sign mediumblob,
+unique (email,exam),
+unique (aadhaar,exam)
+)auto_increment=1000;
+
+
+
+
+
+
+
