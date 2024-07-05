@@ -1,1 +1,1 @@
-# ExamRegistration-MR3cube
+# Exam Registration Portal
